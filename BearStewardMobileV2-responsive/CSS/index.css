@@ -1,0 +1,129 @@
+        /* 参考 */
+        /* body{
+            background: url(./img/熊管家-M-首页.png) no-repeat;
+        }
+        .wrap{opacity: .6;} */
+        /* 欢迎来到熊管家 */
+        .indexWelcome{
+            padding: 5.6rem 2.666rem 0 2.666rem;
+        }
+        .indexWelcome .indexWelcontent{
+            font-size: 3.2rem;
+            line-height: 1.48em;
+            color:#333333;
+            margin:4.8rem 1.733rem 3.466rem 0;
+            /* letter-spacing: .8px; */
+        }
+        .indexWelcome .indexWelimg{
+            display: flex;
+        }
+        .indexWelcome .indexWelimg img{
+            height: 25.4rem;
+            width: 38.266rem;
+            object-fit: cover;
+        }
+        .indexWelcome .indexWelimg .indexWeltel{
+            background-color: #00906B;
+            padding-top:1.6rem;
+            width: 64%;
+            margin-left: .266rem;
+            flex-grow: 1;
+        }
+        .indexWelcome .indexWeltel .indexWeltelinner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .indexWelcome .indexWeltel .indexWeltelinner img{
+            width: 3.6rem;
+            height: 3.466rem;
+            margin-left: 3.2rem;
+        }
+        .indexWelcome .indexWeltel .indexWeltelinner p{
+            width: 100%;
+            margin-left: 3.066rem;
+            flex-grow: 1;
+            font-size: 4.8rem;
+            line-height: 6.4rem;
+            color: #ffffff;
+            /* 省略号 */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .indexWelcome .indexWeltel button{
+            padding:.533rem 4.533rem;
+            text-align: center;
+            font-size: 3.2rem;
+            border-radius: 3.333rem 0;
+            background-color: #FFFFFF;
+            color: #14916a;
+            border:.533rem solid #ffffff;
+            box-sizing: border-box;
+            float: right;
+            margin:1.066rem 3.866rem 3.2rem 0;
+        }
+        .indexWelcome .indexWeltel button:active{
+            background-color: #14916a;
+            color: #FFFFFF;
+        }
+        /* 欢迎来到熊管家END */
+        /* 装修管家服务 */
+        .indexServive{
+            margin:7.066rem 0 0px 0;
+            padding-bottom: 4.266rem;
+        }
+        .indexServive ul{
+            width: 100%;
+            box-sizing: border-box;
+            padding:1.333rem;
+            display: flex;
+            flex-flow: wrap;
+            margin-top:2rem;
+        }
+        .indexServive li{
+            width: 40%;
+            flex-grow: 1;
+            position: relative;
+        }
+        .indexServive li img{
+            width: 100%;
+            box-sizing: border-box;
+            padding: 1.333rem;
+        }
+        .indexServive li .indexServiveliimgmask{
+            position: absolute;
+            top:calc(100% - 1.333333rem);
+            bottom:1.333333rem;
+            left:12rem;
+            right:12rem;
+            background-color: rgba(0,0,0,.5);
+            /* 过渡 */
+            transition: .3s;
+        }
+        .indexServive li:hover .indexServiveliimgmask{
+            top:9.86666rem;
+            bottom:9.86666rem;
+        }
+        .indexServive li:hover .indexServiveliimgmask a{
+            opacity: 1;
+        }
+        .indexServive li .indexServiveliimgmask a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            padding:3.2rem 1.333rem 3.333rem;
+            color: #FFFFFF;
+            font-size: 4.8rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            /* 溢出隐藏 */
+            overflow: hidden;
+
+        }
+        /* 装修管家服务END */

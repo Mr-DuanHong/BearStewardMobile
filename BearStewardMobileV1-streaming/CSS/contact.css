@@ -1,0 +1,191 @@
+        /* 参考 */
+        /* body{
+            background: url(../img/熊管家-M-联系我们.png) no-repeat;
+        }
+        .wrap{opacity: .6;} */
+
+        /* 联系我们 */
+        .contactContainer{
+            padding-top: 23px;
+        }
+        .modelContainertitle p{
+            /* 英文标题内边距 */
+           padding-left: 54px;
+           padding-right: 54px;
+        }
+        /* 二维码 */
+        .contactContainer .contactQRcode{
+            background-color: #4EB197;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px 25px 22px 25px;
+            margin-top: 18px;
+        }
+        .contactContainer .contactQRcode .contactQRcodeimg{
+            max-width: 67.5px;
+            max-height: 67.5px;
+            margin-right: 7.5vw;
+            margin-left: 2vw;
+        }
+        .contactContainer .contactQRcodecontent{
+            padding:7.5px 0 13.5px 0;
+        }
+        .contactContainer .contactQRcodecontent h2{
+            font-size: 18px;
+            line-height: 1.5em;
+            color: #f6f6f6;
+            text-align: center;
+            margin-bottom: 2.5px;
+        }
+        .contactContainer .contactQRcodecontent p{
+            font-size: 12px;
+            line-height: 1.5em;
+            color: #333333;
+            text-align: center;
+        }
+        .contactContainer .contactQRcodecontent span{
+            color: #f6f6f6;
+        }
+        /* 地址 */
+        .contactContainer .contactAddress{
+            background-color: #F6F6F6;
+            padding: 15.5px 11.5px 13.5px;
+        }
+        .contactContainer .contactAddress p{
+            font-size: 12px;
+            line-height: 24px;
+            color: #333333;
+        }
+        .contactContainer .contactAddress span{
+            font-weight: bold;
+        }
+        /* 请客户联系我 */
+        .contactContainer .contactPlesecontact{
+            background-color: #FFFFFF;
+            padding: 28px 13px 4px 18px;
+        }
+        .contactContainer .contactPlesecontact h2{
+            font-size: 18px;
+            line-height: 1.5em;
+            color: #333333;
+            font-weight: normal;
+            text-align: center;
+            margin-bottom: 17px;
+        }
+        .contactContainer .contactPlesecontact div{
+            font-size: 12px;
+            color: #333333;
+            font-weight: normal;
+            margin:10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .contactPlesecontact div h6{
+            font-weight: normal;
+            margin-right: 19px;
+            flex-shrink: 0;
+        }
+        .contactPlesecontact div h6::before{
+            content: '*';
+            color: transparent;
+        }
+        .contactPlesecontact .contactPlesecontactname h6::before,.contactPlesecontact .contactPlesecontacttel h6::before{
+            content: '*';
+            color: red;
+        }
+        .contactPlesecontact div input{
+            flex-grow: 1;
+            max-width: 272.5px;
+            height: 35px;
+            border: 1px solid #AFAFAF;
+            text-indent: 1em;
+        }
+        .contactPlesecontact div input::-webkit-input-placeholder{
+            font-size: 12px;
+            line-height: 35px;
+            color: #aaaaaa;
+            text-indent: 1em;
+            /* 溢出省略 */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .contactPlesecontact div select{
+            flex-grow: 1;
+            max-width: 274.5px;
+            height: 35px;
+            border: 1px solid #AFAFAF;
+            font-size: 12px;
+            line-height: 35px;
+            color: #aaaaaa;
+            text-indent: .7em;
+            /* 消除默认样式 */
+            appearance:none;
+            -moz-appearance:none;
+            -webkit-appearance:none;
+        }
+        .contactPlesecontact .contactPlesecontactname{
+            margin-top:17.5px;
+        }
+        .contactPlesecontact .contactPlesecontactteltime h6{
+            position: relative;
+        }
+        .contactPlesecontact .contactPlesecontactteltime h6::after{
+            /* 致电时间框内三角 */
+            content: '';
+            width: 0;
+            height: 0;
+            display: block;
+            border-top:8px solid rgba(0,0,0,.8);
+            border-left: 8px solid transparent;
+            border-right:8px solid transparent;
+            position: absolute;
+            top:5px;
+            right: -279px;
+        }
+        @media screen and (max-width:374px){
+            .contactPlesecontact .contactPlesecontactteltime h6::after{
+                content: '';
+                width: 0;
+                height: 0;
+                display: block;
+                border-top:8px solid rgba(0,0,0,.8);
+                border-left: 8px solid transparent;
+                border-right:8px solid transparent;
+                position: absolute;
+                top:5px;
+                left: 82vw;
+            }
+        }
+        .contactPlesecontact button{
+            background-color: #333333;
+            font-size: 3.2vw;
+            line-height: 1.5em;
+            padding:5px 44px 5px 44px;
+            border-radius: 4vw;
+            border: 1px solid #333333;
+            margin-top:18px;
+            /* 溢出隐藏 */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .contactPlesecontact button:active{
+            color: #333333;
+            background-color: #ffffff;
+        }
+        /* 地图 */
+        .contactMap{
+            margin-top:18px;
+        }
+
+        /*  */
+        @media screen and (min-width:768px){
+             /* 联系方式-地址  */
+             .contactContainer .contactAddress{
+                padding: 15.5px 28vw 13.5px; 
+             }
+        }

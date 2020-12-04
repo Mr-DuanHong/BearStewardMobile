@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>熊管家-案例分享</title>
+    <link rel="stylesheet" href="./CSS/common.css">
+    <link rel="stylesheet" href="./CSS/case.css">
+    <script>
+        function menuOpen(){
+            var menudis = document.getElementById("headermenuContent");
+            menudis.style.right = "0";
+            menudis.style.opacity = "1";
+        }
+        function menuClose(){
+            var menudis = document.getElementById("headermenuContent");
+            menudis.style.right = "-46.666rem";
+            menudis.style.opacity = "0";
+        }
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <img src="./img/caseBanner.png" alt="loadfailed" class="header-banner">
+            <nav>
+                <a href="index.html" class="headerlogoa"><img src="./img/Bear-Housekeeper.png" alt="loadfailed" class="header-nav-logo"></a>
+                <div class="header-nav-menuSymbol" onclick="menuOpen()">
+                    <svg t="1606987153458" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4293"><path d="M167.076916 187.347548c-11.20825 0-20.264492 9.060335-20.264492 20.264492 0 11.20825 9.056242 20.422081 20.264492 20.422081h689.841052c11.203134 0 20.269609-9.213831 20.269608-20.422081 0-11.203134-9.065451-20.264492-20.269608-20.264492H167.076916zM167.076916 491.810209c-11.20825 0-20.264492 9.060335-20.264492 20.269609s9.056242 20.263469 20.264492 20.263469h689.841052c11.203134 0 20.269609-9.055218 20.269608-20.263469s-9.065451-20.269609-20.269608-20.269609H167.076916zM167.076916 796.119375c-11.20825 0-20.264492 9.060335-20.264492 20.269608s9.056242 20.264492 20.264492 20.264493h689.841052c11.203134 0 20.269609-9.056242 20.269608-20.264493s-9.065451-20.269609-20.269608-20.269608H167.076916z" p-id="4294" fill="#000000"></path></svg>
+                </div>
+            </nav>
+            <div id="headermenuContent" class="header-menuContent">
+                <img src="./img/header-menuimg.png" alt="loadfailed" onclick="menuClose()">
+                <ul>
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="./aboutus.html">了解我们</a></li>
+                    <li class="active"><a href="./case.html">案例分享</a></li>
+                    <li><a href="">精装服务</a></li>
+                    <li><a href="">优质产品</a></li>
+                    <li><a href="./news.html">公司动态</a></li>
+                    <li><a href="./contact.html">找我们聊聊</a></li>
+                </ul>
+            </div>
+        </header>
+        <article>
+            <div class="caseContainer">
+                <div class="modelContainertitle">
+                    <h2>案例分享</h2>
+                    <div></div>
+                    <p>CASE CENTER</p>
+                </div>
+                <ul>
+                    <li>
+                        <img src="./img/case1.png" alt="loadfailed">
+                        <div class="caseImgmask">论·美的存在</div>
+                    </li>
+                    <li>
+                        <img src="./img/case2.png" alt="loadfailed">
+                        <div class="caseImgmask">论·美的存在</div>
+                    </li>
+                    <li>
+                        <img src="./img/case3.png" alt="loadfailed">
+                        <div class="caseImgmask">论·美的存在</div>
+                    </li>
+                    <li>
+                        <img src="./img/case4.png" alt="loadfailed">
+                        <div class="caseImgmask">论·美的存在</div>
+                    </li>
+                </ul>
+                <div class="caseContainerbutton">
+                    <button>上一页</button>
+                    <button>下一页</button>
+                </div>
+            </div>
+        </article>
+        <footer>
+            <div class="footerTop">
+                <a href="index.html"><img src="./img/footer-logo.png" alt="loadfailed"></a>
+                <div class="footerTopflex">
+                    <div class="footerToptel">
+                        <div class="footerToptelbordertop"></div>
+                        <section>
+                            <div class="footerToptelimg"><img src="./img/footer-phone.png" alt="loadfailed"></div>
+                            <p>028-82708866 / 13558833169</p>
+                        </section>
+                        <div class="footerToptelborderbottom"></div>
+                    </div>
+                </div>
+                <div class="footerTopcontent">
+                    <div class="footetTopcontentsprite"></div>
+                    <div class="footerTopcontenttext">成都熊管家装饰装修有限公司</div>
+                </div>
+                <div class="footerTopcontent">
+                    <div class="footetTopcontentsprite"></div>
+                    <div class="footerTopcontenttext">地址 : 成都市温江区珠江广场写字楼15楼</div>
+                </div>
+                <div class="footerTopcontent">
+                    <div class="footetTopcontentsprite"></div>
+                    <div class="footerTopcontenttext">联系电话 : 028-82708866 ( 座机 ) /135558833169</div>
+                </div>
+                <div class="footerTopcontent">
+                    <div class="footetTopcontentsprite"></div>
+                    <div class="footerTopcontenttext">E-mail : admian@admin.com</div>
+                </div>
+            </div>
+            <div class="footerFastnav">
+                <h3>快速导航</h3>
+                <section>
+                    <a href="./aboutus.html">了解我们</a>/
+                    <a href="./case.html">案例分享</a>/
+                    <a href="">精装服务</a>
+                    <a href="">优质产品</a>/
+                    <a href="./news.html">公司动态</a>/
+                    <a href="./contact.html">联系我们</a>
+                </section>
+                <img src="./img/footer-img.png" alt="loadfailed">
+            </div>
+            <div class="footerShotrcutentrance">
+                <h3>快捷入口</h3>
+                <ul>
+                    <li></li>
+                    <li><div></div></li>
+                    <li><div></div></li>
+                    <li><div></div></li>
+                    <li><div></div></li>
+                    <li><div></div></li>
+                    <li><div></div></li>
+                    <li></li>
+                </ul>
+                <h3>互联网家装引领者</h3>
+                <div class="copyright">Copyright &copy;2015-2019 &nbsp;成都熊管家装饰装修有限公司 版权所有</div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

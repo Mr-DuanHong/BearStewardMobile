@@ -1,0 +1,124 @@
+ /* 参考 */
+/* body{
+    background: url(./img/熊管家-M-关于我们.jpg) no-repeat;
+}
+.wrap{opacity: .6;} */
+ /* 公司简介 */
+ .modelContainertitle p{
+    padding-left: 64px;
+    padding-right: 64px;
+    margin-bottom: 16.5px;
+}
+.aboutusIntro{
+    padding-top:25px;
+}
+.aboutusIntro .aboutustrotopimg{
+    width: 100%;
+}
+.aboutusIntro section{
+    padding:16px 12px 50px 10.5px;
+    background-color: #F6F6F6;
+    position: relative;
+}
+.aboutusIntro section p{
+    font-size: 12px;
+    line-height: 1.5em;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.aboutusIntro section .aboutustrolastp{
+    margin-bottom: 0px;
+}
+.aboutusIntro .aboutustrocontent{
+    margin-bottom: -9px;
+    /* 溢出省略 */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+}
+.aboutusIntro section button{
+    margin:18px 0 9.5px 0;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+}
+/* 公司简介中，点击展开全部取消溢出隐藏效果 */
+.aboutusIntro section button:hover+div{
+    display: block;
+}
+.aboutusIntro section button:hover{
+    bottom:0px;
+}
+
+
+/* 团队展示 */
+.aboutusTeamshow{
+    padding-top:23px;
+}
+.aboutusTeamshow .aboutusTeamshowimgcontainer{
+    position: relative;
+}
+.aboutusTeamshow .aboutusTeamshowimg{
+    width: 100%;
+}
+.aboutusTeamshow .aboutusTeamshowlefticon{
+    width: 5.6vw;
+    position: absolute;
+    top:41.5%;
+    left: 10px;
+    opacity: .7;
+}
+.aboutusTeamshow .aboutusTeamshowlefticon:active{
+    opacity: 1;
+    transform: scale(1.2);
+    transition: .1s;
+}
+.aboutusTeamshow .aboutusTeamshowrighticon{
+    width: 5.6vw;
+    position: absolute;
+    top:41.5%;
+    right: 10px;
+    opacity: .7;
+}
+.aboutusTeamshow .aboutusTeamshowrighticon:active{
+    opacity: 1;
+    transform: scale(1.2);
+    transition: .1s;
+}
+.aboutusTeamshow section{
+    /* 金牌设计团队 */
+    padding:7.5px 0 24.5px 0;
+    width: 100%;
+}
+.aboutusTeamshow section h3{
+    width: 50%;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #000000;
+    padding: 0 11px 0 11px;
+    float: left;
+    /* 溢出省略 */
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+}
+.aboutusTeamshow section p{
+    width: 50%;
+    box-sizing: border-box;
+    font-size: 10px;
+    line-height: 1.5em;
+    color: #666666;
+    padding: 0 10px 0 10px;
+    text-align: right;
+    float:right;
+    margin-right: -10px;
+    /* 溢出省略 */
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+    /* 缩放为10px */
+    transform: scale(0.833333);
+}

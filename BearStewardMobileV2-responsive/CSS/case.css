@@ -1,0 +1,95 @@
+/* 参考 */
+/* body{
+    background: url(./img/熊管家-M-案例列表.jpg) no-repeat;
+}
+.wrap{opacity: .6;} */
+.caseContainer{
+    padding-top:6.133rem; 
+}
+.caseContainer .modelContainertitle p{
+    padding-left: 14.4rem;
+    padding-right: 14.4rem;
+}
+.caseContainer ul{
+    width: 100%;
+    box-sizing: border-box;
+    padding:0 1.333rem;
+    margin-top: 2.133rem;
+}
+.caseContainer ul li{
+    width: 100%;
+    position: relative;
+}
+.caseContainer li img{
+    width: 100%;
+    box-sizing: border-box;
+    height: 64.133rem;
+    object-fit: cover;
+    box-sizing: border-box;
+    padding: 1.333rem;
+}
+.caseContainer li::before{
+    /* 三角 */
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    border-top:6.4rem solid rgba(20,145,106,.5);
+    border-left: 6.4rem solid transparent;
+    position: absolute;
+    top:1.333rem;
+    right: 1.333rem;
+    /* 过渡 */
+    transition: .3s;
+    opacity: 1;
+}
+.caseContainer li div{
+    /* 遮罩效果 */
+    font-size: 5.333333rem;
+    color: #f3f3f3;
+    text-align: center;
+    background-color: rgba(0,0,0,.5);
+    opacity: 0;
+    /* 定位 */
+    position: absolute;
+    top:5.466666rem;
+    right: calc(100% - 4.4rem);
+    bottom: 4.4rem;
+    left: 4.4rem;
+    /* flex居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 过渡 */
+    transition: .3s;
+    overflow: hidden;
+}
+.caseContainer li:hover div{
+    right: 5.066666rem;
+    left: 4.4rem;
+    opacity: 1;
+}
+.caseContainer li:hover::before{
+    right:-1.7066rem;
+    opacity: 0;
+}
+/* 按钮 */
+.caseContainerbutton{
+    display: flex;
+    justify-content: space-between;
+    margin:9.066rem 2.666rem 8.666rem;
+}
+.caseContainerbutton button{
+    background-color: #14916a;
+    border:none;
+    border-radius: 4rem 0;
+    font-size: 3.733333rem;
+    color: #ffffff;
+    padding: 1.066rem 6.133rem 1.333rem 5.066rem;
+    box-sizing: border-box;
+    border: .266rem solid #14916a;
+}
+.caseContainerbutton button:active{
+    background-color: white;
+    color: #14916a;
+}

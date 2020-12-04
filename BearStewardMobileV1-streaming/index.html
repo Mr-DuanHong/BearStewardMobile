@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>熊管家-主页</title>
+    <link rel="stylesheet" href="./CSS/common.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <script>
+        function menuOpen(){
+            var menudis = document.getElementById("headermenuContent");
+            menudis.style.right = "0";
+            menudis.style.opacity = "1";
+        }
+        function menuClose(){
+            var menudis = document.getElementById("headermenuContent");
+            menudis.style.right = "-175px";
+            menudis.style.opacity = "0";
+        }
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <img src="./img/index-banner.png" alt="loadfailed" class="header-banner">
+            <nav>
+                <a href="index.html" class="headerlogoa"><img src="./img/Bear-Housekeeper.png" alt="loadfailed" class="header-nav-logo"></a>
+                <div class="header-nav-menuSymbol" onclick="menuOpen()">
+                    <div class="header-nav-menuSymbol-line"></div>
+                    <div class="header-nav-menuSymbol-line"></div>
+                    <div class="header-nav-menuSymbol-line"></div>
+                </div>
+            </nav>
+            <div id="headermenuContent" class="header-menuContent">
+                <img src="./img/header-menuimg.png" alt="loadfailed" onclick="menuClose()">
+                <ul>
+                    <li class="active"><a href="./index.html">首页</a></li>
+                    <li><a href="./aboutus.html">了解我们</a></li>
+                    <li><a href="./case.html">案例分享</a></li>
+                    <li><a href="">精装服务</a></li>
+                    <li><a href="">优质产品</a></li>
+                    <li><a href="./news.html">公司动态</a></li>
+                    <li><a href="./contact.html">找我们聊聊</a></li>
+                </ul>
+            </div>
+        </header>
+        <article>
+            <div class="indexWelcome">
+                <div class="modelContainertitle">
+                    <h2>欢迎来到熊管家</h2>
+                    <div></div>
+                    <p>WELCOME TO BEAR HOUSE</p>
+                </div>
+                <p class="indexWelcontent">熊管家家居（成都）有限公司 , 是一家设计驱动的全案美学整装公司。我们致力于为客户提供一站式整装+软装定制服务。熊管家以创新者的姿态 , 为改变家装行业糟糕的体验而来。熊管家主要为城市中产家庭 , 提供全空间、全功能的定制精装、软装、家具一体化家装解决方案。</p>
+                <div class="indexWelimg">
+                    <img src="./img/index-1.png" alt="loadfailed">
+                    <div class="indexWeltel">
+                        <div class="indexWeltelinner">
+                            <img src="./img/index-phone.png" alt="loadfailed">
+                            <p>028-82708866</p>
+                        </div>
+                        <div class="indexWeltelinner">
+                            <img src="./img/index-phone.png" alt="loadfailed">
+                            <p>13558833169</p>
+                        </div>
+                        <button>联系我们</button>
+                    </div>
+                </div>
+            </div>
+            <div class="indexServive">
+                <div class="modelContainertitle">
+                    <h2>装修管家服务</h2>
+                    <div></div>
+                    <p>DECORATION HOUSEKEEPING SERVICE</p>
+                </div>
+                <ul>
+                    <li>
+                        <img src="./img/index-2.png" alt="loadfailed">
+                        <div class="indexServiveliimgmask"><a href="">量房</a></div>
+                    </li>
+                    <li>
+                        <img src="./img/index-3.png" alt="loadfailed">
+                        <div class="indexServiveliimgmask"><a href="">图纸</a></div>
+                    </li>
+                    <li>
+                        <img src="./img/index-4.png" alt="loadfailed">
+                        <div class="indexServiveliimgmask"><a href="">现场</a></div>
+                    </li>
+                    <li>
+                        <img src="./img/index-5.png" alt="loadfailed">
+                        <div class="indexServiveliimgmask"><a href="">报价</a></div>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <footer>
+            <div class="footerTop">
+                <a href="index.html"><img src="./img/footer-logo.png" alt="loadfailed"></a>
+                <div class="footerTopflex">
+                    <div class="footerToptel">
+                        <div class="footerToptelbordertop"></div>
+                        <section>
+                            <div class="footerToptelimg"><img src="./img/footer-phone.png" alt="loadfailed"></div>
+                            <p>028-82708866 / 13558833169</p>
+                        </section>
+                        <div class="footerToptelborderbottom"></div>
+                    </div>
+                </div>
+                <div class="footerTopcontent">
+                    <div class="footetTopcontentsprite"></div>
+                    <div class="footerTopcontenttext">成都熊管家装饰装修有限公司</div>
+                </div>
+                <div class="footerTopcontent">
+                    <div class="footetTopcontentsprite"></div>
+                    <div class="footerTopcontenttext">地址 : 成都市温江区珠江广场写字楼15楼</div>
+                </div>
+                <div class="footerTopcontent">
+                    <div class="footetTopcontentsprite"></div>
+                    <div class="footerTopcontenttext">联系电话 : 028-82708866 ( 座机 ) /135558833169</div>
+                </div>
+                <div class="footerTopcontent">
+                    <div class="footetTopcontentsprite"></div>
+                    <div class="footerTopcontenttext">E-mail : admian@admin.com</div>
+                </div>
+            </div>
+            <div class="footerFastnav">
+                <h3>快速导航</h3>
+                <section>
+                    <a href="./aboutus.html">了解我们</a>/
+                    <a href="./case.html">案例分享</a>/
+                    <a href="">精装服务</a>
+                    <a href="">优质产品</a>/
+                    <a href="./news.html">公司动态</a>/
+                    <a href="./contact.html">联系我们</a>
+                </section>
+                <img src="./img/footer-img.png" alt="loadfailed">
+            </div>
+            <div class="footerShotrcutentrance">
+                <h3>快捷入口</h3>
+                <ul>
+                    <li></li>
+                    <li><div></div></li>
+                    <li><div></div></li>
+                    <li><div></div></li>
+                    <li><div></div></li>
+                    <li><div></div></li>
+                    <li><div></div></li>
+                    <li></li>
+                </ul>
+                <h3>互联网家装引领者</h3>
+                <div class="copyright">Copyright &copy;2015-2019 &nbsp;成都熊管家装饰装修有限公司 版权所有</div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

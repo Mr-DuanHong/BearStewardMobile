@@ -1,0 +1,91 @@
+/* 参考 */
+/* body{
+    background: url(./img/熊管家-M-案例列表.jpg) no-repeat;
+}
+.wrap{opacity: .6;} */
+.caseContainer{
+    padding-top:23px; 
+}
+.caseContainer .modelContainertitle p{
+    padding-left: 54px;
+    padding-right: 54px;
+}
+.caseContainer ul{
+    width: 100%;
+    box-sizing: border-box;
+    padding:0 5px 0 5px;
+    margin-top: 8px;
+}
+.caseContainer ul li{
+    width: 100%;
+    position: relative;
+}
+.caseContainer li img{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.caseContainer li::before{
+    /* 三角 */
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    border-top:6.4vw solid rgba(20,145,106,.5);
+    border-left: 6.4vw solid transparent;
+    position: absolute;
+    top:5px;
+    right: 5px;
+    /* 过渡 */
+    transition: .3s;
+    opacity: 1;
+}
+.caseContainer li div{
+    /* 遮罩效果 */
+    font-size: 5.333333vw;
+    color: #f3f3f3;
+    text-align: center;
+    background-color: rgba(0,0,0,.5);
+    opacity: 0;
+    /* 定位 */
+    position: absolute;
+    top:5.466666vw;
+    right: calc(100% - 4.4vw);
+    bottom: 4.4vw;
+    left: 4.4vw;
+    /* flex居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 过渡 */
+    transition: .3s;
+}
+.caseContainer li:hover div{
+    right: 5.066666vw;
+    left: 4.4vw;
+    opacity: 1;
+}
+.caseContainer li:hover::before{
+    right:-6.4px;
+    opacity: 0;
+}
+/* 按钮 */
+.caseContainerbutton{
+    display: flex;
+    justify-content: space-between;
+    margin:34px 10px 32.5px 10px;
+}
+.caseContainerbutton button{
+    background-color: #14916a;
+    border:none;
+    border-radius: 15px 0 15px 0;
+    font-size: 3.733333vw;
+    color: #ffffff;
+    padding: 4px 23px 5px 19px;
+    box-sizing: border-box;
+    border: 1px solid #14916a;
+}
+.caseContainerbutton button:active{
+    background-color: white;
+    color: #14916a;
+}

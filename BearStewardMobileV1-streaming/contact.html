@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>熊管家-联系我们</title>
+    <link rel="stylesheet" href="./CSS/common.css">
+    <link rel="stylesheet" href="./CSS/contact.css">
+    <script>
+        function menuOpen(){
+            var menudis = document.getElementById("headermenuContent");
+            menudis.style.right = "0";
+            menudis.style.opacity = "1";
+        }
+        function menuClose(){
+            var menudis = document.getElementById("headermenuContent");
+            menudis.style.right = "-175px";
+            menudis.style.opacity = "0";
+        }
+    </script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=6rHPUNc0sYN4s29KLdiH8GF4m6wprLM4"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <img src="./img/contactbanner.jpg" alt="loadfailed" class="header-banner">
+            <nav>
+                <a href="index.html" class="headerlogoa"><img src="./img/Bear-Housekeeper.png" alt="loadfailed" class="header-nav-logo"></a>
+                <div class="header-nav-menuSymbol" onclick="menuOpen()">
+                    <div class="header-nav-menuSymbol-line"></div>
+                    <div class="header-nav-menuSymbol-line"></div>
+                    <div class="header-nav-menuSymbol-line"></div>
+                </div>
+            </nav>
+            <div id="headermenuContent" class="header-menuContent">
+                <img src="./img/header-menuimg.png" alt="loadfailed" onclick="menuClose()">
+                <ul>
+                    <li class="active"><a href="./index.html">首页</a></li>
+                    <li><a href="./aboutus.html">了解我们</a></li>
+                    <li><a href="./case.html">案例分享</a></li>
+                    <li><a href="">精装服务</a></li>
+                    <li><a href="">优质产品</a></li>
+                    <li><a href="./news.html">公司动态</a></li>
+                    <li><a href="./contact.html">找我们聊聊</a></li>
+                </ul>
+            </div>
+        </header>
+        <article>
+            <div class="contactContainer">
+                <div class="modelContainertitle">
+                    <h2>联系方式</h2>
+                    <div></div>
+                    <p>CONTACT US</p>
+                </div>  
+                <div class="contactQRcode">
+                    <img src="./img/QRCODE.png" alt="loadfailed" class="contactQRcodeimg">
+                    <div class="contactQRcodecontent">
+                        <h2>- 扫微信二维码 -</h2>
+                        <p>添加<span>熊管家</span>微信咨询</p>
+                    </div>
+                </div>
+                <div class="contactAddress">
+                    <p><span>地址 : </span>成都市温江区珠江广场写字楼15楼</p>
+                    <p><span>电话 : </span>028-82708866</p>
+                    <p><span>手机 : </span>13558833169</p>
+                    <p><span>QQ : </span>123456789</p>
+                    <p>09:00 AM ~ 06:00 PM，周末照常上班</p>
+                </div>
+                <div class="contactPlesecontact">
+                    <h2>—— 请客户顾问联系我 ——</h2>
+                    <form action="">
+                        <div class="contactPlesecontactname"><h6>您的姓名</h6><input type="text" name="yourname" placeholder="请填写您的姓名"></div>
+                        <div class="contactPlesecontacttel"><h6>手机号码</h6><input type="text" name="telphone" placeholder="请填写您的手机号码"></div>
+                        <div class="contactPlesecontactarea"><h6>建筑面积</h6><input type="text" name="area" placeholder="选填"></div>
+                        <div class="contactPlesecontactteltime"><h6>致电时间</h6>
+                            <select>
+                                <option value="上午">上午</option>
+                                <option value="中午">中午</option>
+                                <option value="下午">下午</option>
+                            </select>
+                        </div>
+                        <div class="contactPlesecontactbutton"><button>立即预约</button></div>
+                    </form>
+                </div>  
+                <div class="contactMap" >
+                    <div style="width:100%; height:266px;font-size:12px" id="map"></div>
+                </div>
+            </div>
+        </article>
+        <footer>
+            <div class="footerTop">
+                <a href="index.html"><img src="./img/footer-logo.png" alt="loadfailed"></a>
+                <div class="footerTopflex">
+                    <div class="footerToptel">
+                        <div class="footerToptelbordertop"></div>
+                        <section>
+                            <div class="footerToptelimg"><img src="./img/footer-phone.png" alt="loadfailed"></div>
+                            <p>028-82708866 / 13558833169</p>
+                        </section>
+                        <div class="footerToptelborderbottom"></div>
+                    </div>
+                </div>
+                <div class="footerTopcontent">
+                    <div class="footetTopcontentsprite"></div>
+                    <div class="footerTopcontenttext">成都熊管家装饰装修有限公司</div>
+                </div>
+                <div class="footerTopcontent">
+                    <div class="footetTopcontentsprite"></div>
+                    <div class="footerTopcontenttext">地址 : 成都市温江区珠江广场写字楼15楼</div>
+                </div>
+                <div class="footerTopcontent">
+                    <div class="footetTopcontentsprite"></div>
+                    <div class="footerTopcontenttext">联系电话 : 028-82708866 ( 座机 ) /135558833169</div>
+                </div>
+                <div class="footerTopcontent">
+                    <div class="footetTopcontentsprite"></div>
+                    <div class="footerTopcontenttext">E-mail : admian@admin.com</div>
+                </div>
+            </div>
+            <div class="footerFastnav">
+                <h3>快速导航</h3>
+                <section>
+                    <a href="./aboutus.html">了解我们</a>/
+                    <a href="./case.html">案例分享</a>/
+                    <a href="">精装服务</a>
+                    <a href="">优质产品</a>/
+                    <a href="./news.html">公司动态</a>/
+                    <a href="./contact.html">联系我们</a>
+                </section>
+                <img src="./img/footer-img.png" alt="loadfailed">
+            </div>
+            <div class="footerShotrcutentrance">
+                <h3>快捷入口</h3>
+                <ul>
+                    <li></li>
+                    <li><div></div></li>
+                    <li><div></div></li>
+                    <li><div></div></li>
+                    <li><div></div></li>
+                    <li><div></div></li>
+                    <li><div></div></li>
+                    <li></li>
+                </ul>
+                <h3>互联网家装引领者</h3>
+                <div class="copyright">Copyright &copy;2015-2019 &nbsp;成都熊管家装饰装修有限公司 版权所有</div>
+            </div>
+        </footer>
+    </div>
+</body>
+<!-- 地图控件 -->
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+      createMap();//创建地图
+      setMapEvent();//设置地图事件
+      addMapControl();//向地图添加控件
+      addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){ 
+      map = new BMap.Map("map"); 
+      map.centerAndZoom(new BMap.Point(103.870436,30.693226),17);
+    }
+    function setMapEvent(){
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+      target.addEventListener("click",function(){
+        target.openInfoWindow(window);
+      });
+    }
+    function addMapOverlay(){
+      var markers = [
+        {content:"我的备注",title:"",imageOffset: {width:-46,height:-21},position:{lat:30.692776,lng:103.86988}}
+      ];
+      for(var index = 0; index < markers.length; index++ ){
+        var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+        var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+          imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+        })});
+        var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+        var opts = {
+          width: 200,
+          title: markers[index].title,
+          enableMessage: false
+        };
+        var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+        marker.setLabel(label);
+        addClickHandler(marker,infoWindow);
+        map.addOverlay(marker);
+      };
+    }
+    //向地图添加控件
+    function addMapControl(){
+      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+      map.addControl(scaleControl);
+      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+      map.addControl(navControl);
+      var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+      map.addControl(overviewControl);
+    }
+    var map;
+      initMap();
+  </script>
+</html>

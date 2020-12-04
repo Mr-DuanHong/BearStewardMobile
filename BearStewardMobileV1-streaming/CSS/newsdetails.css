@@ -1,0 +1,85 @@
+ /* 参考 */
+/* body{
+    background: url(./img/熊管家-M-新闻详细.jpg) no-repeat;
+}
+.wrap{opacity: .6;} */
+ /* 新闻详情 */
+ .newsdetailsContainer{
+    padding-top:22.5px;
+}
+.modelContainertitle p{
+    /* 英文标题内边距 */
+   padding-left: 54px;
+   padding-right: 54px;
+}
+.newsdetailsTitle{ 
+    /* 文章标题 */
+    margin: 18px 0 12px 0;
+    padding:12px 10.5px 11px 10.5px;
+    background-color: #FAFAFA;
+    border: 1px solid #F3F3F3;
+}
+.newsdetailsTitle h2{
+    font-size: 18px;
+    line-height: 1.5em;
+    color: #333333;
+    margin-bottom: 9px;
+}
+.newsdetailsTitle p{
+    /* 发布/浏览数 */
+    font-size: 10px; 
+    line-height: 1.5em;
+    color: #14916a;
+    /* 缩放10px */
+    transform: scale(.9);
+    transform-origin:left center;
+}
+.newsdetailsTitle span{
+    color: #333333;
+}
+.newsdetailsDegist{
+    /* 摘要 */
+    font-size: 12px;
+    line-height: 1.5em;
+    color: #999999;
+    padding: 0 39.5px 0 11.5px;
+}
+.newsdetailsContent{
+    /* 正文 */
+    padding:0 10.5px 0 11px;
+    margin-top:-4px;
+}
+.newsdetailsContent p{
+    font-size: 12px;
+    line-height: 1.5em;
+    color: #333333;
+    margin-top: 18px;
+}
+.newsdetailsContent img{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: -3px;
+}
+.newsdetailsbutton{
+    padding: 18.5px 10.5px 20.5px 10.5px;
+
+}
+.newsdetailsbutton button{
+    width: 100%;
+    font-size: 14px;
+    line-height: 28px;
+    /* 溢出省略 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin:15px 0;
+    padding-top:0;
+    padding-bottom: 0;
+}
+.newsdetailsbutton button span{
+    display: inline-block;
+    height: 100%;
+    border-right: 1px solid #3DAA8F;
+    padding-right: 8px;
+    margin-right: 8px;
+}

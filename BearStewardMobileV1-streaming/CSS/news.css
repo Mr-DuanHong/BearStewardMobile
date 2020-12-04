@@ -1,0 +1,130 @@
+        /* 参考 */
+        /* body{
+            background: url(./img/熊管家-M-新闻列表.jpg) no-repeat;
+        }
+        .wrap{opacity: .6;} */
+        /* 通栏 */
+        .wrap{
+            min-width: 328px;
+        }
+        /* 新闻动态 */
+        .modelContainertitle p{
+            /* 英文标题内边距 */
+           padding-left: 54px;
+           padding-right: 54px;
+        }
+        .newsContainer{
+            padding-top:23px;
+        }
+        .newsContainer ul{
+            padding:7px 0px 0 0px;
+        }
+        .newsContainer ul li{
+            border-bottom: 1px solid #EDEDED;
+            padding:9px 10px 9px 10px;
+            display: flex;
+        }
+        .newsContainer ul li:active{
+            /* animation: headShake .3s; */
+            /* position: relative;
+            top:2px;
+            left:8px; */
+            background-color: #14916a;
+            border-radius: 5%;
+            transition: .1s;
+        }
+        .newsContainer ul li:active h3{
+            color: #ffffff;
+        }
+        .newsContainer ul li:active p{
+            color:#ffffff;
+        }
+        /* @keyframes headShake {
+            0% {
+                -webkit-transform:translateX(0);
+                transform:translateX(0)
+            }
+            6.5% {
+                -webkit-transform:translateX(-6px) rotateY(-9deg);
+                transform:translateX(-6px) rotateY(-9deg)
+            }
+            18.5% {
+                -webkit-transform:translateX(5px) rotateY(7deg);
+                transform:translateX(5px) rotateY(7deg)
+            }
+            31.5% {
+                -webkit-transform:translateX(-3px) rotateY(-5deg);
+                transform:translateX(-3px) rotateY(-5deg)
+            }
+            43.5% {
+                -webkit-transform:translateX(2px) rotateY(3deg);
+                transform:translateX(2px) rotateY(3deg)
+            }
+            50% {
+                -webkit-transform:translateX(0);
+                transform:translateX(0)
+            }
+        } */
+        .newsContainer li img{
+            max-width: 98px;
+            /* float: left; */
+
+        }
+        .newsContainer li .newsContainercontent{
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            padding: 0px 14px 0px 13px;
+            flex-grow: 1;
+        }
+        .newsContainer .newsContainercontent h3{
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 1.5em;
+            color:#333333;
+            margin-bottom: 5px;
+            /* 溢出隐藏 */
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+        }
+        .newsContainer .newsContainercontent p{
+            max-width: 280px;
+            font-size: 12px;
+            line-height: 1.5em;
+            color: #999999;
+            /* margin-left: -13px; */
+            text-align: left;
+            /* 溢出隐藏 */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* 缩小为10px */
+            transform: scale(0.9);
+            transform-origin: left center;
+        }
+        /* 按钮 */
+        .newsContainer .newsContainerbutton{
+            padding:17px 11px 14px 10.5px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+        }
+        .newsContainer .newsContainerbutton button{
+            padding: 5px 22px 4px 22px;
+        }
+        @media screen and (min-width:768px){
+            .newsContainer ul li{
+                float: left;
+                width: 50%;
+                max-height: 82px;
+                box-sizing: border-box;
+            }
+            .newsContainer ul li:nth-of-type(2n){
+                float: right;
+            }
+            .newsContainer .newsContainerbutton{
+                width: 100%;
+            }
+        }
